@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{93DEF51D-1475-38D5-B583-75A59050F611}</ProjectGuid>
+    <RootNamespace>TDGTDG</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <OutputDirectory>bin\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>TDGTDG</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <OutputDirectory>bin\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>TDGTDG</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">bin\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">TDGTDG</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">false</LinkIncremental>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">bin\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">TDGTDG</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\..\..\Qt\Qt5.12.3\5.12.3\msvc2017\include;..\..\..\Qt\Qt5.12.3\5.12.3\msvc2017\include\QtMultimedia;..\..\..\Qt\Qt5.12.3\5.12.3\msvc2017\include\QtWidgets;..\..\..\Qt\Qt5.12.3\5.12.3\msvc2017\include\QtGui;..\..\..\Qt\Qt5.12.3\5.12.3\msvc2017\include\QtANGLE;..\..\..\Qt\Qt5.12.3\5.12.3\msvc2017\include\QtNetwork;..\..\..\Qt\Qt5.12.3\5.12.3\msvc2017\include\QtCore;release;.;C:\VulkanSDK\1.0.51.0\include;..\..\..\Qt\Qt5.12.3\5.12.3\msvc2017\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;QT_DEPRECATED_WARNINGS;QT_NO_DEBUG;QT_MULTIMEDIA_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName></ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>D:\Qt\Qt5.12.3\5.12.3\msvc2017\lib\Qt5Multimedia.lib;D:\Qt\Qt5.12.3\5.12.3\msvc2017\lib\Qt5Widgets.lib;D:\Qt\Qt5.12.3\5.12.3\msvc2017\lib\Qt5Gui.lib;D:\Qt\Qt5.12.3\5.12.3\msvc2017\lib\Qt5Network.lib;D:\Qt\Qt5.12.3\5.12.3\msvc2017\lib\Qt5Core.lib;D:\Qt\Qt5.12.3\5.12.3\msvc2017\lib\qtmain.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\Qt\Qt5.12.3\5.12.3\msvc2017\lib;C:\opensslx86\lib;C:\Utils\my_sql\mysql-5.6.11-win32\lib;C:\Utils\postgresqlx86\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\TDGTDG.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;QT_DEPRECATED_WARNINGS;QT_NO_DEBUG;QT_MULTIMEDIA_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\..\..\Qt\Qt5.12.3\5.12.3\msvc2017\include;..\..\..\Qt\Qt5.12.3\5.12.3\msvc2017\include\QtMultimedia;..\..\..\Qt\Qt5.12.3\5.12.3\msvc2017\include\QtWidgets;..\..\..\Qt\Qt5.12.3\5.12.3\msvc2017\include\QtGui;..\..\..\Qt\Qt5.12.3\5.12.3\msvc2017\include\QtANGLE;..\..\..\Qt\Qt5.12.3\5.12.3\msvc2017\include\QtNetwork;..\..\..\Qt\Qt5.12.3\5.12.3\msvc2017\include\QtCore;debug;.;C:\VulkanSDK\1.0.51.0\include;..\..\..\Qt\Qt5.12.3\5.12.3\msvc2017\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;QT_DEPRECATED_WARNINGS;QT_MULTIMEDIA_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>D:\Qt\Qt5.12.3\5.12.3\msvc2017\lib\Qt5Multimediad.lib;D:\Qt\Qt5.12.3\5.12.3\msvc2017\lib\Qt5Widgetsd.lib;D:\Qt\Qt5.12.3\5.12.3\msvc2017\lib\Qt5Guid.lib;D:\Qt\Qt5.12.3\5.12.3\msvc2017\lib\Qt5Networkd.lib;D:\Qt\Qt5.12.3\5.12.3\msvc2017\lib\Qt5Cored.lib;D:\Qt\Qt5.12.3\5.12.3\msvc2017\lib\qtmaind.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\Qt\Qt5.12.3\5.12.3\msvc2017\lib;C:\opensslx86\lib;C:\Utils\my_sql\mysql-5.6.11-win32\lib;C:\Utils\postgresqlx86\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\TDGTDG.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;QT_DEPRECATED_WARNINGS;QT_MULTIMEDIA_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="audioplayer.cpp" />
+    <ClCompile Include="bgmusic.cpp" />
+    <ClCompile Include="bullet.cpp" />
+    <ClCompile Include="cannon.cpp" />
+    <ClCompile Include="cannonbullet.cpp" />
+    <ClCompile Include="castle.cpp" />
+    <ClCompile Include="enemy.cpp" />
+    <ClCompile Include="gamewidgeta.cpp" />
+    <ClCompile Include="judge.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainwidget.cpp" />
+    <ClCompile Include="money.cpp" />
+    <ClCompile Include="plistreader.cpp" />
+    <ClCompile Include="tower.cpp" />
+    <ClCompile Include="towerposition.cpp" />
+    <ClCompile Include="waypoint.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="audioplayer.h" />
+    <ClInclude Include="bgmusic.h" />
+    <CustomBuild Include="bullet.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">bullet.h;release\moc_predefs.h;D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_MULTIMEDIA_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include D:/work/QTowerDefense/TDGTDG_B3/release/moc_predefs.h -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/mkspecs/win32-msvc -ID:/work/QTowerDefense/TDGTDG_B3 -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtMultimedia -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtWidgets -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtGui -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtANGLE -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtNetwork -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtCore bullet.h -o release\moc_bullet.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC bullet.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\moc_bullet.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">bullet.h;debug\moc_predefs.h;D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DQT_DEPRECATED_WARNINGS -DQT_MULTIMEDIA_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include D:/work/QTowerDefense/TDGTDG_B3/debug/moc_predefs.h -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/mkspecs/win32-msvc -ID:/work/QTowerDefense/TDGTDG_B3 -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtMultimedia -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtWidgets -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtGui -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtANGLE -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtNetwork -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtCore bullet.h -o debug\moc_bullet.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC bullet.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\moc_bullet.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="cannon.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">cannon.h;release\moc_predefs.h;D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_MULTIMEDIA_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include D:/work/QTowerDefense/TDGTDG_B3/release/moc_predefs.h -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/mkspecs/win32-msvc -ID:/work/QTowerDefense/TDGTDG_B3 -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtMultimedia -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtWidgets -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtGui -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtANGLE -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtNetwork -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtCore cannon.h -o release\moc_cannon.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC cannon.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\moc_cannon.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">cannon.h;debug\moc_predefs.h;D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DQT_DEPRECATED_WARNINGS -DQT_MULTIMEDIA_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include D:/work/QTowerDefense/TDGTDG_B3/debug/moc_predefs.h -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/mkspecs/win32-msvc -ID:/work/QTowerDefense/TDGTDG_B3 -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtMultimedia -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtWidgets -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtGui -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtANGLE -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtNetwork -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtCore cannon.h -o debug\moc_cannon.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC cannon.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\moc_cannon.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="cannonbullet.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">cannonbullet.h;release\moc_predefs.h;D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_MULTIMEDIA_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include D:/work/QTowerDefense/TDGTDG_B3/release/moc_predefs.h -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/mkspecs/win32-msvc -ID:/work/QTowerDefense/TDGTDG_B3 -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtMultimedia -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtWidgets -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtGui -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtANGLE -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtNetwork -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtCore cannonbullet.h -o release\moc_cannonbullet.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC cannonbullet.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\moc_cannonbullet.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">cannonbullet.h;debug\moc_predefs.h;D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DQT_DEPRECATED_WARNINGS -DQT_MULTIMEDIA_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include D:/work/QTowerDefense/TDGTDG_B3/debug/moc_predefs.h -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/mkspecs/win32-msvc -ID:/work/QTowerDefense/TDGTDG_B3 -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtMultimedia -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtWidgets -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtGui -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtANGLE -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtNetwork -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtCore cannonbullet.h -o debug\moc_cannonbullet.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC cannonbullet.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\moc_cannonbullet.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="castle.h" />
+    <CustomBuild Include="enemy.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">enemy.h;release\moc_predefs.h;D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_MULTIMEDIA_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include D:/work/QTowerDefense/TDGTDG_B3/release/moc_predefs.h -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/mkspecs/win32-msvc -ID:/work/QTowerDefense/TDGTDG_B3 -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtMultimedia -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtWidgets -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtGui -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtANGLE -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtNetwork -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtCore enemy.h -o release\moc_enemy.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC enemy.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\moc_enemy.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">enemy.h;debug\moc_predefs.h;D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DQT_DEPRECATED_WARNINGS -DQT_MULTIMEDIA_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include D:/work/QTowerDefense/TDGTDG_B3/debug/moc_predefs.h -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/mkspecs/win32-msvc -ID:/work/QTowerDefense/TDGTDG_B3 -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtMultimedia -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtWidgets -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtGui -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtANGLE -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtNetwork -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtCore enemy.h -o debug\moc_enemy.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC enemy.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\moc_enemy.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="gamewidgeta.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">gamewidgeta.h;release\moc_predefs.h;D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_MULTIMEDIA_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include D:/work/QTowerDefense/TDGTDG_B3/release/moc_predefs.h -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/mkspecs/win32-msvc -ID:/work/QTowerDefense/TDGTDG_B3 -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtMultimedia -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtWidgets -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtGui -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtANGLE -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtNetwork -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtCore gamewidgeta.h -o release\moc_gamewidgeta.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC gamewidgeta.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\moc_gamewidgeta.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">gamewidgeta.h;debug\moc_predefs.h;D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DQT_DEPRECATED_WARNINGS -DQT_MULTIMEDIA_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include D:/work/QTowerDefense/TDGTDG_B3/debug/moc_predefs.h -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/mkspecs/win32-msvc -ID:/work/QTowerDefense/TDGTDG_B3 -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtMultimedia -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtWidgets -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtGui -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtANGLE -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtNetwork -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtCore gamewidgeta.h -o debug\moc_gamewidgeta.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC gamewidgeta.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\moc_gamewidgeta.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="judge.h" />
+    <CustomBuild Include="mainwidget.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">mainwidget.h;release\moc_predefs.h;D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_MULTIMEDIA_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include D:/work/QTowerDefense/TDGTDG_B3/release/moc_predefs.h -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/mkspecs/win32-msvc -ID:/work/QTowerDefense/TDGTDG_B3 -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtMultimedia -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtWidgets -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtGui -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtANGLE -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtNetwork -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtCore mainwidget.h -o release\moc_mainwidget.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC mainwidget.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\moc_mainwidget.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">mainwidget.h;debug\moc_predefs.h;D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DQT_DEPRECATED_WARNINGS -DQT_MULTIMEDIA_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include D:/work/QTowerDefense/TDGTDG_B3/debug/moc_predefs.h -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/mkspecs/win32-msvc -ID:/work/QTowerDefense/TDGTDG_B3 -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtMultimedia -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtWidgets -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtGui -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtANGLE -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtNetwork -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtCore mainwidget.h -o debug\moc_mainwidget.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC mainwidget.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\moc_mainwidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="money.h" />
+    <ClInclude Include="plistreader.h" />
+    <CustomBuild Include="tower.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">tower.h;release\moc_predefs.h;D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_MULTIMEDIA_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include D:/work/QTowerDefense/TDGTDG_B3/release/moc_predefs.h -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/mkspecs/win32-msvc -ID:/work/QTowerDefense/TDGTDG_B3 -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtMultimedia -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtWidgets -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtGui -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtANGLE -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtNetwork -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtCore tower.h -o release\moc_tower.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC tower.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\moc_tower.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">tower.h;debug\moc_predefs.h;D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DQT_DEPRECATED_WARNINGS -DQT_MULTIMEDIA_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include D:/work/QTowerDefense/TDGTDG_B3/debug/moc_predefs.h -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/mkspecs/win32-msvc -ID:/work/QTowerDefense/TDGTDG_B3 -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtMultimedia -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtWidgets -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtGui -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtANGLE -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtNetwork -ID:/Qt/Qt5.12.3/5.12.3/msvc2017/include/QtCore tower.h -o debug\moc_tower.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC tower.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\moc_tower.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="towerposition.h" />
+    <ClInclude Include="waypoint.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\moc_bullet.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_bullet.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_cannon.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_cannon.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_cannonbullet.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_cannonbullet.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_enemy.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_enemy.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_gamewidgeta.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_gamewidgeta.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_mainwidget.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_mainwidget.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">..\..\..\Qt\Qt5.12.3\5.12.3\msvc2017\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">cl -BxD:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -Zi -MDd -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E ..\..\..\Qt\Qt5.12.3\5.12.3\msvc2017\mkspecs\features\data\dummy.cpp 2>NUL >debug\moc_predefs.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">Generate moc_predefs.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">..\..\..\Qt\Qt5.12.3\5.12.3\msvc2017\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">cl -BxD:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -O2 -MD -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E ..\..\..\Qt\Qt5.12.3\5.12.3\msvc2017\mkspecs\features\data\dummy.cpp 2>NUL >release\moc_predefs.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">Generate moc_predefs.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\moc_predefs.h;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClCompile Include="debug\moc_tower.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_tower.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_file.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\qrc_file.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="ui_gamewidgeta.h" />
+    <ClInclude Include="ui_mainwidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="gamewidgeta.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">gamewidgeta.ui;D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\uic.exe gamewidgeta.ui -o ui_gamewidgeta.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">UIC gamewidgeta.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">ui_gamewidgeta.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">gamewidgeta.ui;D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\uic.exe gamewidgeta.ui -o ui_gamewidgeta.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">UIC gamewidgeta.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">ui_gamewidgeta.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mainwidget.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">mainwidget.ui;D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\uic.exe mainwidget.ui -o ui_mainwidget.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">UIC mainwidget.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">ui_mainwidget.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">mainwidget.ui;D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\uic.exe mainwidget.ui -o ui_mainwidget.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">UIC mainwidget.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">ui_mainwidget.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Bg2.png" />
+    <None Include="image\Bg4.png" />
+    <None Include="image\Blue.png" />
+    <None Include="image\Default.png" />
+    <None Include="config\Info.plist" />
+    <None Include="image\Start.png" />
+    <None Include="image\Sun.gif" />
+    <None Include="config\TowersPosition.plist" />
+    <None Include="config\Waves.plist" />
+    <None Include="music\attackedcastle_music.wav" />
+    <None Include="image\background.png" />
+    <None Include="image\bullet.png" />
+    <None Include="image\cannon.png" />
+    <None Include="image\cannon_bullet.png" />
+    <None Include="image\cannon_bullet0.png" />
+    <None Include="image\castle.jpg" />
+    <None Include="music\collectpotion_music.wav" />
+    <None Include="image\d.png" />
+    <None Include="image\e.png" />
+    <None Include="image\enemy.png" />
+    <None Include="music\enemydie_music.wav" />
+    <CustomBuild Include="file.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">file.qrc;D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\rcc.exe;music\attackedcastle_music.wav;music\settower_music.wav;music\win_music.wav;music\collectpotion_music.wav;music\enemydie_music.wav;music\neverend_music.wav;config\TowersPosition.plist;config\Info.plist;config\Waves.plist;image\princess.png;image\main0.png;image\hotworld.jpg;image\background.png;image\enemy.png;image\d.png;image\Default.png;image\e.png;image\laocao.png;image\icon_gold.png;image\cannon_bullet.png;image\cannon_bullet0.png;image\bullet.png;image\icon_HP.png;image\Bg2.png;image\fire.png;image\cannon.png;image\Bg4.png;image\Blue.png;image\helltower0.png;image\othermoney.png;image\tower.png;image\Start.png;image\castle.jpg;image\open_spot.png;image\helltower.png;image\snowworld.jpg;image\Sun.gif;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\rcc.exe -name file file.qrc -o release\qrc_file.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">RCC file.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\qrc_file.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">file.qrc;D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\rcc.exe;music\attackedcastle_music.wav;music\settower_music.wav;music\win_music.wav;music\collectpotion_music.wav;music\enemydie_music.wav;music\neverend_music.wav;config\TowersPosition.plist;config\Info.plist;config\Waves.plist;image\princess.png;image\main0.png;image\hotworld.jpg;image\background.png;image\enemy.png;image\d.png;image\Default.png;image\e.png;image\laocao.png;image\icon_gold.png;image\cannon_bullet.png;image\cannon_bullet0.png;image\bullet.png;image\icon_HP.png;image\Bg2.png;image\fire.png;image\cannon.png;image\Bg4.png;image\Blue.png;image\helltower0.png;image\othermoney.png;image\tower.png;image\Start.png;image\castle.jpg;image\open_spot.png;image\helltower.png;image\snowworld.jpg;image\Sun.gif;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">D:\Qt\Qt5.12.3\5.12.3\msvc2017\bin\rcc.exe -name file file.qrc -o debug\qrc_file.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">RCC file.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\qrc_file.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="image\fire.png" />
+    <None Include="image\helltower.png" />
+    <None Include="image\helltower0.png" />
+    <None Include="image\hotworld.jpg" />
+    <None Include="image\icon_HP.png" />
+    <None Include="image\icon_gold.png" />
+    <None Include="image\laocao.png" />
+    <None Include="image\main0.png" />
+    <None Include="music\neverend_music.wav" />
+    <None Include="image\open_spot.png" />
+    <None Include="image\othermoney.png" />
+    <None Include="image\princess.png" />
+    <None Include="music\settower_music.wav" />
+    <None Include="image\snowworld.jpg" />
+    <None Include="image\tower.png" />
+    <None Include="music\win_music.wav" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

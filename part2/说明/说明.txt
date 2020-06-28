@@ -1,0 +1,3 @@
+﻿config是配置文件
+image是图片资源
+music 是音频资源
